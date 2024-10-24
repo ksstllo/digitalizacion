@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Programador Pro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Imagen de fondo */
+        header {
+            background-image: url('/img/img2.jpeg'); /* Añade la URL de tu imagen aquí */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .description {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .description p {
+            font-size: 1.3rem;
+        }
+
+        /* Sección de servicios */
+        .services {
+            padding: 40px;
+            background-color: #e8e8e8;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .service img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .service-info {
+            max-width: 600px;
+        }
+
+        .service-info h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .service-info p {
+            font-size: 1.1rem;
+        }
+
+        .service-info .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        /* Formulario */
+        .form-container {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .form-container form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container form input,
+        .form-container form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container form button {
+            padding: 15px 30px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .form-container form button:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Pie de página */
+        footer {
+            padding: 30px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Programador Pro</h1>
+        <br>
+        <h2>Joaquín Castillo García</h2>
+        <div class="button-container">
+            <a href="#formulario" class="btn">Pedir Cita</a>
+            <a href="#servicios" class="btn">Ver Servicios</a>
+        </div>
+    </header>
+
+    <!-- Descripción -->
+    <section class="description">
+        <h2>Sobre mí</h2>
+        <p>Soy Joaquín Castillo García, un programador con experiencia en lenguajes como Java, C++, Python, y más. Ofrezco servicios de programación personalizados para proyectos de desarrollo de software, automatización de procesos y creación de aplicaciones a medida.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <h2>Servicios</h2>
+
+        <!-- Servicio 1 -->
+        <div class="service">
+            <img src="/img/img1.jpeg" alt="Desarrollo de Software">
+            <div class="service-info">
+                <h3>Desarrollo de Software</h3>
+                <p>Desarrollo de software personalizado para empresas y particulares. Trabajo con Java, C++, y Python para crear soluciones robustas y escalables.</p>
+                <p class="price">Precio: 50€/hora</p>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service">
+            <img src="/img/img3.jpeg" alt="Automatización de Procesos">
+            <div class="service-info">
+                <h3>Automatización de Procesos</h3>
+                <p>Optimización de procesos empresariales mediante la automatización. Desarrollo de scripts y herramientas en Python para mejorar la eficiencia.</p>
+                <p class="price">Precio: 45€/hora</p>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service">
+            <img src="https://via.placeholder.com/150" alt="Consultoría en Programación">
+            <div class="service-info">
+                <h3>Consultoría en Programación</h3>
+                <p>Asesoría y consultoría en proyectos de programación. Si necesitas apoyo en tus proyectos, te ofrezco mi experiencia para ayudarte a resolver problemas y mejorar tu código.</p>
+                <p class="price">Precio: 40€/hora</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cita -->
+    <section id="formulario" class="form-container">
+        <h2>Crear Cita</h2>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Nombre y Apellidos" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="text" name="telefono" placeholder="Número de Teléfono" required>
+            <input type="text" name="codigo_postal" placeholder="Código Postal" required>
+            <input type="text" name="provincia" placeholder="Provincia" required>
+            <textarea name="motivo" rows="4" placeholder="Motivo de la Cita" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Teléfono: +34 600 123 456</p>
+        <p>Síguenos en nuestras redes:</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+        </div>
+        <p>Patrocinadores: <a href="#">Empresa1</a>, <a href="#">Empresa2</a></p>
+        <p>Apoyado por la <a href="#">Diputación de Granada</a> y la <a href="#">Junta de Andalucía</a></p>
+        <p>&copy; 2024 Programador Pro Joaquín Castillo García. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
